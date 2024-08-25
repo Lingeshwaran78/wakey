@@ -7,7 +7,12 @@ import 'package:wakey/utils/utils.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Permission.notification.request();
-  runApp(const MaterialApp(home: MyApp()));
+  runApp(
+    const MaterialApp(
+      title: "Wakey",
+      home: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatefulWidget {
